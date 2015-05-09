@@ -14,6 +14,7 @@
 		850D64F11AFBF25500FDB95A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850D64EF1AFBF25500FDB95A /* LaunchScreen.xib */; };
 		850D64FD1AFBF25500FDB95A /* DreamCatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 850D64FC1AFBF25500FDB95A /* DreamCatcherTests.m */; };
 		850D65081AFBF3BD00FDB95A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850D65071AFBF3BD00FDB95A /* ListViewController.m */; };
+		85ED158B1AFECC9800B71033 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85ED158A1AFECC9800B71033 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		850D64FC1AFBF25500FDB95A /* DreamCatcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamCatcherTests.m; sourceTree = "<group>"; };
 		850D65061AFBF3BD00FDB95A /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		850D65071AFBF3BD00FDB95A /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		85ED15891AFECC9800B71033 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		85ED158A1AFECC9800B71033 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				850D64E51AFBF25500FDB95A /* AppDelegate.m */,
 				850D65061AFBF3BD00FDB95A /* ListViewController.h */,
 				850D65071AFBF3BD00FDB95A /* ListViewController.m */,
+				85ED15891AFECC9800B71033 /* DetailViewController.h */,
+				85ED158A1AFECC9800B71033 /* DetailViewController.m */,
 				850D64EA1AFBF25500FDB95A /* Main.storyboard */,
 				850D64ED1AFBF25500FDB95A /* Images.xcassets */,
 				850D64EF1AFBF25500FDB95A /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				850D64E61AFBF25500FDB95A /* AppDelegate.m in Sources */,
 				850D64E31AFBF25500FDB95A /* main.m in Sources */,
 				850D65081AFBF3BD00FDB95A /* ListViewController.m in Sources */,
+				85ED158B1AFECC9800B71033 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +424,7 @@
 				850D65021AFBF25500FDB95A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		850D65031AFBF25500FDB95A /* Build configuration list for PBXNativeTarget "DreamCatcherTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				850D65051AFBF25500FDB95A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

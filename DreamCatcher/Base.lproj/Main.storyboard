@@ -28,6 +28,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bur-oP-5WH" id="YqP-Qh-jC7">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tv9-4F-XGK" kind="show" id="q78-pS-Z7Y"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -85,6 +88,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1357.5" y="387"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="G96-nK-Dp3">
+            <objects>
+                <viewController id="tv9-4F-XGK" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mE6-EE-m9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="I92-3K-kkT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U2f-6B-IMO">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pz-Bq-x0Y">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1pz-Bq-x0Y" secondAttribute="trailing" constant="-16" id="kbf-se-NeG"/>
+                            <constraint firstItem="I92-3K-kkT" firstAttribute="top" secondItem="1pz-Bq-x0Y" secondAttribute="bottom" id="lyW-TX-0TH"/>
+                            <constraint firstItem="1pz-Bq-x0Y" firstAttribute="top" secondItem="mE6-EE-m9Z" secondAttribute="bottom" id="tyO-zX-QPg"/>
+                            <constraint firstItem="1pz-Bq-x0Y" firstAttribute="leading" secondItem="U2f-6B-IMO" secondAttribute="leadingMargin" constant="-16" id="xU2-8V-nsJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1pz-Bq-x0Y"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="kbf-se-NeG"/>
+                                <exclude reference="tyO-zX-QPg"/>
+                                <exclude reference="xU2-8V-nsJ"/>
+                                <exclude reference="lyW-TX-0TH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1pz-Bq-x0Y"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="kbf-se-NeG"/>
+                                <include reference="tyO-zX-QPg"/>
+                                <include reference="xU2-8V-nsJ"/>
+                                <include reference="lyW-TX-0TH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="1pz-Bq-x0Y" id="eos-L6-Osd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryt-9E-1tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044.5" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fKt-BS-P4w">
